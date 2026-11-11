@@ -1,0 +1,246 @@
+/*!****************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ../honor-club-phase2-20261021/node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[15].oneOf[5].use[2]!../honor-club-phase2-20261021/node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[15].oneOf[5].use[3]!./components/storefront/mobile-site-nav.module.css ***!
+  \****************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/* Угол светового блика по контуру «Кабинета»: анимируется как число, поэтому
+   объявлен через @property (без поддержки блик просто стоит на месте). */
+@property --account-glow-angle {
+  syntax: "<angle>";
+  inherits: false;
+  initial-value: 0deg;
+}
+
+.mobile-site-nav_nav__FyijE,
+.mobile-site-nav_spacer__dotTP {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .mobile-site-nav_nav__FyijE {
+    position: fixed;
+    inset-inline: 0;
+    bottom: 0;
+    z-index: 40;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    height: calc(64px + env(safe-area-inset-bottom, 0px));
+    padding: 6px max(8px, env(safe-area-inset-right, 0px))
+      calc(6px + env(safe-area-inset-bottom, 0px)) max(8px, env(safe-area-inset-left, 0px));
+    border-top: 1px solid var(--color-border);
+    background: var(--color-card);
+    color: var(--color-fg);
+  }
+  .mobile-site-nav_item__QjgcN {
+    display: flex;
+    min-height: 48px;
+    min-width: 0;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 3px;
+    border-radius: 8px;
+    font-size: 11px;
+    font-weight: 600;
+    line-height: 1.2;
+    text-decoration: none;
+  }
+  .mobile-site-nav_item__QjgcN[aria-current="page"] {
+    color: var(--color-brand);
+  }
+  .mobile-site-nav_item__QjgcN:focus-visible {
+    outline: 2px solid var(--color-brand);
+    outline-offset: -2px;
+  }
+  /* «Кабинет», пока покупатель не в кабинете: по контуру кнопки бежит
+     световой блик, под ней дышит мягкий ореол, значок слегка светится
+     (владелец 18.10: «чтобы интересным свечением было»). */
+  .mobile-site-nav_accountHint__9R_Wo {
+    position: relative;
+    isolation: isolate;
+  }
+  .mobile-site-nav_accountHint__9R_Wo::before {
+    content: "";
+    position: absolute;
+    inset: 0 2px;
+    z-index: -1;
+    padding: 1.5px;
+    border-radius: 12px;
+    background: conic-gradient(
+      from var(--account-glow-angle),
+      transparent 0deg,
+      transparent 150deg,
+      var(--color-brand) 220deg,
+      #ffd9b8 250deg,
+      var(--color-brand) 280deg,
+      transparent 340deg
+    );
+    -webkit-mask:
+      linear-gradient(#000 0 0) content-box,
+      linear-gradient(#000 0 0);
+    -webkit-mask-composite: xor;
+    mask:
+      linear-gradient(#000 0 0) content-box exclude,
+      linear-gradient(#000 0 0);
+    pointer-events: none;
+    animation: mobile-site-nav_accountGlowSpin__uoD3g 3.2s linear infinite;
+  }
+  .mobile-site-nav_accountHint__9R_Wo::after {
+    content: "";
+    position: absolute;
+    inset: 0 2px;
+    z-index: -2;
+    border-radius: 12px;
+    background: radial-gradient(120% 110% at 50% 115%, var(--color-brand), transparent 70%);
+    box-shadow: 0 0 18px -4px var(--color-brand);
+    opacity: 0.16;
+    pointer-events: none;
+    animation: mobile-site-nav_accountGlowBreathe__J7XDG 3.2s ease-in-out infinite;
+  }
+  .mobile-site-nav_accountHint__9R_Wo .mobile-site-nav_icon__kp77T {
+    filter: drop-shadow(0 0 5px var(--color-brand));
+  }
+  @keyframes mobile-site-nav_accountGlowSpin__uoD3g {
+    to {
+      --account-glow-angle: 360deg;
+    }
+  }
+  @keyframes mobile-site-nav_accountGlowBreathe__J7XDG {
+    0%,
+    100% {
+      opacity: 0.12;
+    }
+    50% {
+      opacity: 0.34;
+    }
+  }
+  .mobile-site-nav_icon__kp77T {
+    position: relative;
+  }
+  .mobile-site-nav_count__UOXQ2 {
+    position: absolute;
+    top: -5px;
+    left: 15px;
+    min-width: 16px;
+    padding: 1px 4px;
+    border-radius: 10px;
+    background: var(--color-brand);
+    color: var(--color-brand-foreground);
+    font-size: 10px;
+    text-align: center;
+  }
+  .mobile-site-nav_spacer__dotTP {
+    display: block;
+    flex-shrink: 0;
+    height: calc((72px + env(safe-area-inset-bottom, 0px)) / 0.85);
+  }
+  /* Only a visible keyboard hides the menu; sliders/checks keep it usable. */
+  .mobile-site-nav_nav__FyijE[hidden] {
+    display: none;
+  }
+
+  /* Scanner remains in search/menu, the guided consultant remains in menu. */
+  [data-mobile-menu-shell]:has(.mobile-site-nav_spacer__dotTP) [data-testid="scan-fab"],
+  [data-mobile-menu-shell]:has(.mobile-site-nav_spacer__dotTP) [data-testid="scan-fab"] + div,
+  [data-mobile-menu-shell]:has(.mobile-site-nav_spacer__dotTP) [data-corner-consultant] {
+    display: none;
+  }
+  [data-mobile-menu-shell]:has(.mobile-site-nav_spacer__dotTP) [data-testid="support-fab"] {
+    bottom: calc((80px + env(safe-area-inset-bottom, 0px)) / 0.85);
+  }
+  [data-mobile-menu-shell]:has(.mobile-site-nav_spacer__dotTP) [data-testid="sticky-buy-bar"] {
+    bottom: calc((64px + env(safe-area-inset-bottom, 0px)) / 0.85);
+  }
+  [data-mobile-menu-shell]:has(.mobile-site-nav_spacer__dotTP):has([data-testid="sticky-buy-bar"])
+    [data-testid="support-fab"] {
+    bottom: calc((150px + env(safe-area-inset-bottom, 0px)) / 0.85);
+  }
+}
+
+@media (max-width: 767px) and (prefers-reduced-motion: reduce) {
+  .mobile-site-nav_accountHint__9R_Wo::before,
+  .mobile-site-nav_accountHint__9R_Wo::after {
+    animation: none;
+  }
+}
+
+/*!*************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ../honor-club-phase2-20261021/node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[15].oneOf[5].use[2]!../honor-club-phase2-20261021/node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[15].oneOf[5].use[3]!./components/storefront/register-cta.module.css ***!
+  \*************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/* Живой фон карточки HONOR Club (RegisterCta, вариант «loud»).
+   Рельеф плывёт за 48 с и петляет бесшовно: слой шириной 200% уходит ровно
+   на половину. Блик проходит раз в 7 с, тёплые пятна дышат. Анимируются только
+   transform и opacity — текст карточки не перерисовывается. При просьбе
+   убрать движение фон стоит на месте. */
+
+@keyframes register-cta_topoDrift__xcWAl {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes register-cta_sweep__YhDYu {
+  0% {
+    transform: translateX(0) skewX(-14deg);
+    opacity: 0;
+  }
+  8% {
+    opacity: 1;
+  }
+  45% {
+    opacity: 1;
+  }
+  55%,
+  100% {
+    transform: translateX(460%) skewX(-14deg);
+    opacity: 0;
+  }
+}
+
+@keyframes register-cta_glow__rqAsf {
+  from {
+    opacity: 0.55;
+    transform: scale(1);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1.18);
+  }
+}
+
+.register-cta_topoMask__hzQeV {
+  -webkit-mask-image: linear-gradient(90deg, transparent, #000 12%, #000 88%, transparent);
+  mask-image: linear-gradient(90deg, transparent, #000 12%, #000 88%, transparent);
+}
+
+.register-cta_topo__94_Bq {
+  animation: register-cta_topoDrift__xcWAl 48s linear infinite;
+  will-change: transform;
+}
+
+.register-cta_sweep__YhDYu {
+  transform: skewX(-14deg);
+  animation: register-cta_sweep__YhDYu 7s ease-in-out 1.5s infinite;
+}
+
+.register-cta_glow__rqAsf {
+  animation: register-cta_glow__rqAsf 9s ease-in-out infinite alternate;
+}
+
+.register-cta_glowLate__M_FF8 {
+  animation-delay: -4.5s;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .register-cta_topo__94_Bq,
+  .register-cta_sweep__YhDYu,
+  .register-cta_glow__rqAsf {
+    animation: none;
+  }
+
+  .register-cta_sweep__YhDYu {
+    opacity: 0;
+  }
+}
+

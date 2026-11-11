@@ -1,0 +1,562 @@
+/*!********************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ../honor-club-phase2-20261021/node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[15].oneOf[5].use[2]!../honor-club-phase2-20261021/node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[15].oneOf[5].use[3]!./components/storefront/home/category-tiles.module.css ***!
+  \********************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.category-tiles_section__tswpf {
+  width: 100%;
+  max-width: 1200px;
+  padding-block: 32px;
+  container-type: inline-size;
+}
+
+.category-tiles_sectionHeader__ZrZ4I {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 12px 20px;
+  margin-bottom: 24px;
+}
+
+.category-tiles_heading__YitEr {
+  min-width: 0;
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: 3rem;
+  font-weight: 600;
+  line-height: 1.08;
+  letter-spacing: -0.02em;
+  overflow-wrap: anywhere;
+  text-wrap: balance;
+  text-transform: uppercase;
+}
+
+.category-tiles_heading__YitEr::before {
+  display: block;
+  width: 24px;
+  height: 2px;
+  margin-bottom: 14px;
+  background: var(--color-brand);
+  content: "";
+}
+
+.category-tiles_allProducts__UtY51 {
+  display: inline-flex;
+  min-height: 56px;
+  max-width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  padding: 8px 0 8px 8px;
+  border-bottom: 1px solid var(--color-brand);
+  color: var(--color-card-foreground);
+  font-size: 0.875rem;
+  font-weight: 600;
+  line-height: 1.4;
+  text-decoration: none;
+  overflow-wrap: anywhere;
+  transition: color 180ms ease;
+}
+
+.category-tiles_allProductsGlyph__7Iw1u {
+  width: 22px;
+  height: 22px;
+  flex-shrink: 0;
+  color: var(--color-brand);
+  transition: transform 180ms ease;
+}
+
+.category-tiles_grid__AKH0T {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.category-tiles_card__BkWGj {
+  position: relative;
+  min-width: 0;
+  overflow: hidden;
+  isolation: isolate;
+  border: 1px solid color-mix(in srgb, var(--color-foreground) 7%, transparent);
+  border-radius: 6px;
+  background: color-mix(in srgb, var(--color-card) 95%, var(--color-foreground));
+  color: var(--color-card-foreground);
+  text-decoration: none;
+  transition:
+    border-color 180ms ease,
+    background-color 180ms ease,
+    box-shadow 180ms ease;
+}
+
+.category-tiles_allProducts__UtY51:focus-visible,
+.category-tiles_card__BkWGj:focus-visible {
+  outline: 3px solid var(--color-brand);
+  outline-offset: 4px;
+}
+
+.category-tiles_artworkFrame__qC2rq {
+  display: block;
+  min-width: 0;
+}
+
+.category-tiles_artwork__QY1Xs {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1;
+  object-fit: contain;
+  object-position: center;
+  pointer-events: none;
+}
+
+.category-tiles_primary__i45I3 {
+  display: flex;
+  flex-direction: column;
+  background: color-mix(in srgb, var(--color-card) 91%, var(--color-foreground));
+}
+
+.category-tiles_primary__i45I3 .category-tiles_artworkFrame__qC2rq {
+  position: relative;
+  flex-shrink: 0;
+}
+
+.category-tiles_primary__i45I3 .category-tiles_artworkFrame__qC2rq::before {
+  /* Extend the photo edge outside the original; the opaque image stays above it. */
+  position: absolute;
+  z-index: 0;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 18px;
+  background-image: inherit;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: 100% auto;
+  opacity: 0.3;
+  filter: blur(8px);
+  mask-image: linear-gradient(to bottom, #000, transparent);
+  pointer-events: none;
+  content: "";
+}
+
+.category-tiles_primary__i45I3 .category-tiles_artwork__QY1Xs {
+  position: relative;
+  z-index: 1;
+}
+
+.category-tiles_caption__nsueO,
+.category-tiles_copy__g_Cxr {
+  min-width: 0;
+}
+
+.category-tiles_primary__i45I3 .category-tiles_caption__nsueO {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  min-height: 100px;
+  flex: 1;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 18px 14px 56px;
+}
+
+.category-tiles_title__HhWVU {
+  min-width: 0;
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 1.23;
+  overflow-wrap: anywhere;
+  text-wrap: balance;
+  text-transform: uppercase;
+}
+
+.category-tiles_primary__i45I3 .category-tiles_title__HhWVU {
+  font-size: 1.875rem;
+  line-height: 1.12;
+}
+
+.category-tiles_primary__i45I3:lang(kk) .category-tiles_title__HhWVU {
+  font-size: clamp(1.125rem, 5.1cqw, 1.625rem);
+}
+
+.category-tiles_description__ito3i {
+  display: none;
+  margin: 12px 0 0;
+  color: var(--color-muted-foreground);
+  font-size: 0.875rem;
+  line-height: 1.6;
+  overflow-wrap: anywhere;
+}
+
+.category-tiles_arrow__fPkKq {
+  display: grid;
+  flex-shrink: 0;
+  place-items: center;
+  color: color-mix(in srgb, var(--color-card-foreground) 76%, transparent);
+  transition:
+    border-color 180ms ease,
+    background-color 180ms ease,
+    color 180ms ease;
+}
+
+.category-tiles_primary__i45I3 .category-tiles_arrow__fPkKq {
+  position: absolute;
+  right: 14px;
+  bottom: 13px;
+  width: 34px;
+  height: 34px;
+  border: 1px solid color-mix(in srgb, var(--color-foreground) 32%, transparent);
+  border-radius: 50%;
+}
+
+.category-tiles_arrowGlyph__Q6NTu {
+  width: 19px;
+  height: 19px;
+  flex-shrink: 0;
+}
+
+.category-tiles_secondary__L5vpr {
+  display: grid;
+  grid-template-columns: 72px minmax(0, 1fr);
+  min-height: 108px;
+  align-items: center;
+  gap: 10px;
+  padding: 6px 9px 6px 6px;
+}
+
+.category-tiles_secondary__L5vpr:nth-child(3),
+.category-tiles_secondary__L5vpr:nth-child(4) {
+  margin-top: 12px;
+}
+
+.category-tiles_secondary__L5vpr .category-tiles_artwork__QY1Xs {
+  border-radius: 3px;
+}
+
+.category-tiles_secondary__L5vpr .category-tiles_caption__nsueO {
+  padding-block: 5px 20px;
+}
+
+.category-tiles_secondary__L5vpr .category-tiles_arrow__fPkKq {
+  position: absolute;
+  right: 8px;
+  bottom: 7px;
+}
+
+.category-tiles_secondary__L5vpr .category-tiles_arrowGlyph__Q6NTu {
+  width: 13px;
+  height: 13px;
+}
+
+.category-tiles_card__BkWGj:active {
+  border-color: var(--color-brand);
+  background: color-mix(in srgb, var(--color-card) 87%, var(--color-brand));
+  box-shadow: inset 0 0 0 1px var(--color-brand);
+}
+
+.category-tiles_allProducts__UtY51:active {
+  color: var(--color-brand);
+}
+
+@container (max-width: 350px) {
+  .category-tiles_heading__YitEr {
+    font-size: 2.5rem;
+  }
+
+  .category-tiles_allProducts__UtY51 {
+    font-size: 0.8125rem;
+  }
+
+  .category-tiles_secondary__L5vpr {
+    grid-template-columns: 44px minmax(0, 1fr);
+    gap: 6px;
+  }
+
+  .category-tiles_secondary__L5vpr .category-tiles_title__HhWVU {
+    font-size: 1rem;
+  }
+
+  .category-tiles_primary__i45I3 .category-tiles_caption__nsueO {
+    min-height: 92px;
+    gap: 6px;
+    padding-inline: 10px;
+  }
+
+  .category-tiles_primary__i45I3 .category-tiles_title__HhWVU {
+    font-size: 1.5rem;
+  }
+
+  .category-tiles_primary__i45I3 .category-tiles_arrow__fPkKq {
+    right: 10px;
+    bottom: 10px;
+    width: 28px;
+    height: 28px;
+  }
+
+  .category-tiles_primary__i45I3 .category-tiles_arrowGlyph__Q6NTu {
+    width: 16px;
+    height: 16px;
+  }
+}
+
+@media (min-width: 640px) {
+  .category-tiles_section__tswpf {
+    padding-block: 44px;
+  }
+
+  .category-tiles_sectionHeader__ZrZ4I {
+    margin-bottom: 28px;
+  }
+
+  .category-tiles_heading__YitEr {
+    font-size: 3.75rem;
+  }
+
+  .category-tiles_grid__AKH0T {
+    gap: 16px;
+  }
+
+  .category-tiles_secondary__L5vpr {
+    grid-template-columns: 80px minmax(0, 1fr);
+    gap: 14px;
+    padding: 7px 16px 7px 7px;
+  }
+
+  .category-tiles_secondary__L5vpr .category-tiles_title__HhWVU {
+    font-size: 1.375rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .category-tiles_grid__AKH0T {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+    gap: 16px 20px;
+  }
+
+  .category-tiles_primary__i45I3 {
+    display: grid;
+    grid-column: span 3;
+    grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
+  }
+
+  .category-tiles_primary__i45I3 .category-tiles_artworkFrame__qC2rq {
+    grid-area: 1 / 2;
+    align-self: center;
+  }
+
+  .category-tiles_primary__i45I3 .category-tiles_artworkFrame__qC2rq::before {
+    inset: 0 auto 0 -22px;
+    width: 22px;
+    height: auto;
+    background-position: left center;
+    background-size: auto 100%;
+    filter: blur(9px);
+    mask-image: linear-gradient(to right, transparent, #000);
+  }
+
+  .category-tiles_primary__i45I3 .category-tiles_caption__nsueO {
+    grid-area: 1 / 1;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 24px;
+    padding: 28px 16px 28px 28px;
+  }
+
+  .category-tiles_primary__i45I3 .category-tiles_title__HhWVU {
+    font-size: 2.25rem;
+  }
+
+  .category-tiles_primary__i45I3:lang(kk) .category-tiles_title__HhWVU {
+    font-size: 1.75rem;
+  }
+
+  .category-tiles_description__ito3i {
+    display: block;
+  }
+
+  .category-tiles_primary__i45I3 .category-tiles_arrow__fPkKq {
+    position: static;
+    width: 40px;
+    height: 40px;
+  }
+
+  .category-tiles_secondary__L5vpr {
+    grid-column: span 2;
+    grid-template-columns: 96px minmax(0, 1fr);
+    min-height: 116px;
+    gap: 16px;
+    padding: 7px 22px 7px 7px;
+  }
+
+  .category-tiles_secondary__L5vpr:nth-child(5) {
+    margin-top: 12px;
+  }
+
+  .category-tiles_secondary__L5vpr .category-tiles_caption__nsueO {
+    padding-block: 5px;
+    padding-right: 8px;
+  }
+
+  .category-tiles_secondary__L5vpr .category-tiles_title__HhWVU {
+    font-size: 1.5rem;
+  }
+
+  .category-tiles_secondary__L5vpr .category-tiles_arrow__fPkKq {
+    top: 50%;
+    right: 10px;
+    bottom: auto;
+    transform: translateY(-50%);
+  }
+
+  .category-tiles_secondary__L5vpr .category-tiles_arrowGlyph__Q6NTu {
+    width: 16px;
+    height: 16px;
+  }
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .category-tiles_allProducts__UtY51:hover {
+    color: var(--color-brand);
+  }
+
+  .category-tiles_allProducts__UtY51:hover .category-tiles_allProductsGlyph__7Iw1u {
+    transform: translate(2px, -2px);
+  }
+
+  .category-tiles_card__BkWGj:hover {
+    border-color: color-mix(in srgb, var(--color-brand) 65%, transparent);
+    background: color-mix(in srgb, var(--color-card) 90%, var(--color-foreground));
+    box-shadow: 0 12px 28px rgb(0 0 0 / 12%);
+  }
+
+  .category-tiles_primary__i45I3:hover .category-tiles_arrow__fPkKq {
+    border-color: var(--color-brand);
+    background: var(--color-brand);
+    color: var(--color-brand-foreground);
+  }
+
+  .category-tiles_secondary__L5vpr:hover .category-tiles_arrow__fPkKq {
+    color: var(--color-brand);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .category-tiles_allProducts__UtY51,
+  .category-tiles_allProductsGlyph__7Iw1u,
+  .category-tiles_card__BkWGj,
+  .category-tiles_arrow__fPkKq {
+    transition: none;
+  }
+
+  .category-tiles_allProducts__UtY51:hover .category-tiles_allProductsGlyph__7Iw1u {
+    transform: none;
+  }
+}
+
+/*!**************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ../honor-club-phase2-20261021/node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[15].oneOf[5].use[2]!../honor-club-phase2-20261021/node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[15].oneOf[5].use[3]!./components/storefront/home/by-color.module.css ***!
+  \**************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.by-color_section__6Nt2z {
+  position: relative;
+  isolation: isolate;
+}
+
+.by-color_backdrop__zLuF9 {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  overflow: hidden;
+  border: 1px solid rgb(110 120 83 / 20%);
+  border-radius: 24px;
+  background: #11130c;
+  pointer-events: none;
+}
+
+.by-color_scene__8mqQb {
+  position: absolute;
+  inset: 0;
+}
+
+.by-color_landscape__T50bl {
+  object-fit: cover;
+  object-position: 72% center;
+}
+
+.by-color_backdrop__zLuF9::after {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(90deg, rgb(17 19 12 / 65%), rgb(17 19 12 / 10%) 72%),
+    linear-gradient(0deg, #11130c, transparent 65%);
+  content: "";
+}
+
+.by-color_title__XLnSi {
+  color: #f4f3ec;
+}
+
+.by-color_subtitle__gDU6U {
+  color: #f0eee3;
+}
+
+.by-color_lineCard__MgvU_ {
+  isolation: isolate;
+  background: #11130c;
+  color: #f4f3ec;
+}
+
+.by-color_linePhoto__JZOVq {
+  position: absolute;
+  inset-block: 0;
+  inset-inline-end: 0;
+  width: 58%;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.by-color_lineArtwork__0m3WA {
+  object-fit: cover;
+}
+
+.by-color_linePhoto__JZOVq::after {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    #11130c,
+    rgb(17 19 12 / 82%) 42%,
+    rgb(17 19 12 / 68%)
+  );
+  content: "";
+}
+
+.by-color_lineTitle__INVrD {
+  color: #f4f3ec;
+}
+
+.by-color_lineDescription__8RCMO,
+.by-color_lineArrow__L455f {
+  color: #d0d2c5;
+}
+
+@media (max-width: 639px) {
+  .by-color_scene__8mqQb {
+    bottom: auto;
+    height: 480px;
+    max-height: 100%;
+  }
+
+  .by-color_landscape__T50bl {
+    object-position: 68% top;
+  }
+
+  .by-color_backdrop__zLuF9::after {
+    background:
+      linear-gradient(90deg, rgb(17 19 12 / 95%), rgb(17 19 12 / 15%)),
+      linear-gradient(180deg, transparent 160px, #11130c 480px);
+  }
+}
+
